@@ -1,4 +1,4 @@
-properties([pipelineTriggers([pollSCM('*/30 * * * *')])])
+properties([pipelineTriggers([pollSCM('*/2 * * * *')])])
 node {
     stage("clone") {
         git branch: 'main', url: 'https://github.com/ogkatzu/MySwoftware_1'
